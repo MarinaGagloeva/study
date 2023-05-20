@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+	<head>
+		<base href="/localmy" />
+		<meta charset="UTF-8" />
+		<title><?= $titulek ?></title>
+		<meta name="description" content="<?= $popis ?>" />
+		<meta name="keywords" content="<?= $klicova_slova ?>" />
+		<link rel="stylesheet" href="style.css" type="text/css"/>
+	</head>
+
+	<body>
+		<header>
+			<h1>PojišteniApp</h1>
+        
+		</header>
+			
+		
+		<br clear="both" />
+		
+		<article>
+		<?php $this->kontroler->vypisPohled(); // vložení aktuálního pohledu do šablony ?>
+
+		</article>
+		
+		<footer>
+			<h6>Závěrečný studijní projekt v rámci rekvalifikačného kurzu "Programátor WWW aplikací PHP" v ITnetwork
+			<a href="http://www.ITnetwork.cz" target="_blank">ITnetwork.cz</a>, Marina Gagloeva.</h6>
+		</footer>
+	</body>
+</html>

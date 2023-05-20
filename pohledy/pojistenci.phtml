@@ -1,0 +1,56 @@
+<h2>Seznam pojištěnců</h2>
+<table>
+
+<tr>
+		<td>
+			<h4>Jméno a příjmení</h4>
+			
+		</td>
+		<td>
+			<h4>Věk</h4>
+			
+		</td>
+		<td>
+			<h4>Telefon</h4>
+			
+		</td>
+	</tr>
+<?php foreach ($pojistenci as $pojistenec) : ?>
+	<tr>
+		<td>
+			<h3><?= $pojistenec['jmeno'] ?> <?= $pojistenec['prijmeni'] ?></h3>
+			
+		</td>
+		<td>
+			<p><?= $pojistenec['vek'] ?></p>
+			
+		</td>
+		<td>
+			<p><?= $pojistenec['telefonni_cislo'] ?></p>
+			
+		</td>
+	</tr>
+<?php endforeach ?>
+</table>
+<br></br>
+<h2>Nový pojištěnec</h2>
+
+<p>Pro uzavření pojistné smlouvy kontaktujte nás odesláním formuláře níže.</p>
+
+<form method="post">
+
+
+    Jméno<br />
+    <input type="text" name="jmeno" required="required" value="<?php if (isset($_POST['jmeno'])) echo(htmlspecialchars($_POST['jmeno'])); ?>" /><br />
+    Příjmení<br />
+    <input type="text" name="prijmeni" required="required" value="<?php if (isset($_POST['prijmeni'])) echo(htmlspecialchars($_POST['prijmeni'])); ?>" /><br />
+    Věk<br />
+	<input type="text" name="vek" required="required" value="<?php if (isset($_POST['vek'])) echo(htmlspecialchars($_POST['vek'])); ?>" /><br />
+    Telefonní číslo<br />
+    <input type="text" name="telefonni_cislo" required="required" value="<?php if (isset($_POST['telefonni_cislo'])) echo(htmlspecialchars($_POST['telefonni_cislo'])); ?>" /><br />
+    
+    <input type="submit" value="Uložit" />
+</form>
+
+
+

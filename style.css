@@ -1,0 +1,104 @@
+/**
+ * styl pro projekt "Evidence pojištění, Marina Gagloeva"
+ */
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	width: 900px; 
+	margin: 0 auto;
+    
+
+}
+
+h1 {
+	text-align: center;
+	color: white;
+	font-family: Lucida Sans;
+}
+
+h2 {
+	text-align: center;
+	color:#4b0082;
+    font-family: Lucida Sans;
+}
+
+h4 {
+	color:#4b0082;
+}
+
+    h6 {
+        text-align: center;
+        color: white;
+}       
+        
+
+header {
+    text-align: center;
+	padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: auto;
+    background: #4b0082;
+    border-radius: 10px;
+    
+}
+
+footer {
+	font-size: 11px;
+	text-align: center;
+	padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    background: #4b0082;
+    border-radius: 10px;
+}
+
+table {
+    border: 3px solid gray;
+    border-collapse: collapse;
+    width: 50%;
+    text-align: center;
+}
+
+td {
+    border: 1px solid grey;
+    
+ }
+
+input[type="submit"] {
+    background: #6FA4F8;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 0px;
+}
+
+input[type="submit"]:hover {
+    background: #2976f8;
+    color: #EEEEEE;
+    cursor: pointer;
+}
+
+input[type="text"] {
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding: 0.3em;
+}
+
+input[type="submit"] {
+    padding: 10px 25px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
